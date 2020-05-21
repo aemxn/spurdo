@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+	<title>To Spurdo xDD</title>
+	<style type="text/css">
+		body {
+			background-image:url('http://vignette2.wikia.nocookie.net/the-dolan-and-friends-show/images/1/19/Spurdo_sparde_vector_by_kevinino-d6ehtjk.png/revision/latest?cb=20150423165828');
+			background-repeat: no-repeat;
+			background-position: 50% 0;
+			-ms-background-size: cover;
+			-o-background-size: cover;
+			-moz-background-size: cover;
+			-webkit-background-size: cover;
+			background-size: cover;
+		}
+		.output {
+			background: black;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<p>Insert text to spurdo:</p>
+	<textarea id="fromtext" cols="45" rows="10"></textarea>
+	<br/>
+	<input type="submit" name="submit" onclick="tosparde()" value="To Sparde xDD"/>
+
+	<div class="output" id="p"></div>
+
+	<script type="text/javascript" src="libspurdo.js"></script>
+	<script type="text/javascript">
+		function tosparde() {
+			var fromtext = document.getElementById("fromtext").value;
+			document.getElementById("p").innerHTML = toSpurdo(fromtext);
+		}
+	</script>
+</body>
+</html>
